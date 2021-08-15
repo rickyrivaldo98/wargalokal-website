@@ -1,10 +1,10 @@
-import React from 'react';
+import "./styles/globals.css"
+import "./styles/style.css"
+import Layout from "./components/Layout/layout";
 
-function App() {
+const App = () => {
   return (
-    <div className="text-5xl">
-      test
-    </div>
+    <Layout />
   );
 }
 
