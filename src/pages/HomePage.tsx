@@ -1,13 +1,12 @@
 import Navbar from "../Layout/navbar";
 import Footer from "../Layout/footer";
-
-import headerBg from "../public/bg.png";
-import tentang from "../public/tentang.png";
-import tujuanBG from "../public/tujuan.png";
-import check from "../public/icons/check.png";
-import rocket from "../public/icons/rocket.png";
-import chat from "../public/icons/chat.png";
-import partner from "../public/partner.png";
+import headerBg from "../assets/bg.png";
+import tentang from "../assets/tentang.png";
+import tujuanBG from "../assets/tujuan.png";
+import check from "../assets/icons/check.png";
+import rocket from "../assets/icons/rocket.png";
+import chat from "../assets/icons/chat.png";
+import partner from "../assets/partner.png";
 
 const Home = () => {
   return (

@@ -1,10 +1,29 @@
 import "./styles/globals.css"
 import "./styles/style.css"
-import Layout from "./components/Layout/layout";
+import { Switch, Route } from "react-router-dom";
+import Home from "./pages/HomePage";
+import FindDesa from "./pages/findDesa";
+import Login from "./auth/login";
+import Register from "./auth/register";
 
 const App = () => {
   return (
-    <Layout />
+    <>
+      <Switch>
+        <Route exact path="/caridesa">
+          <FindDesa />
+        </Route>
+        <Route exact path="/auth/login">
+          <Login />
+        </Route>
+        <Route exact path="/auth/register">
+          <Register />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </>
   );
 }
 

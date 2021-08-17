@@ -1,7 +1,7 @@
 import Footer from "../Layout/footer";
 import Navbar from "../Layout/navbar";
-import FilterSektor from "./filterSektor";
-import Sektor from "./sektorDesa";
+import FilterSektor from "../components/desa/filterSektor";
+import Sektor from "../components/desa/sektorDesa";
 
 const FindDesa = () => {
   return (

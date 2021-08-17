@@ -1,5 +1,5 @@
 import { useState } from "react";
-import petani from "../../public/icons/petani.png";
+import petani from "../assets/icons/petani.png";
 const Register = () => {
 
   const [email, setEmail] = useState("");
@@ -9,7 +9,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = {email, password, confirmPassword};
+    const data = { email, password, confirmPassword };
     console.log(data);
     validatePassword();
   }

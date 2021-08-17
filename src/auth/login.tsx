@@ -1,5 +1,5 @@
 import { useState } from "react";
-import petani from "../../public/icons/petani.png";
+import petani from "../assets/icons/petani.png";
 const Login = () => {
 
   const [email, setEmail] = useState("");

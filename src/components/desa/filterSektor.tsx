@@ -10,7 +10,7 @@ const FilterSektor = () => {
               </h3>
             </div>
 
-            <div className="my-20 px-32 flex flex-wrap  justify-center items-center gap-x-52 gap-y-20">
+            <div className="my-20 px-32 flex flex-wrap justify-center items-center gap-x-52 gap-y-20">
               <button className=" max-h-max whitespace-nowrap focus:outline-none  focus:ring  focus:border-blue-300 rounded max-w-max text-gray-100 bg-green-400 hover:bg-green-600 px-4 py-1 flex items-center hover:shadow-lg">
                 Pendidikan
               </button>

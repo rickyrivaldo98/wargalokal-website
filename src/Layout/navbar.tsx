@@ -39,7 +39,7 @@ const Navbar = ({ toggle }: AppProps) => {
               Login
             </button>
           </Link>
-          <Link className=" text-base lg:text-normal 2xl:mr-10 xl:mr-5 lg:mr-3" to="/events">
+          <Link className=" text-base lg:text-normal 2xl:mr-10 xl:mr-5 lg:mr-3" to="/caridesa">
             <button className="mt-5 transition ease-in bg-primary hover:bg-green-700 text-white py-2 px-4 rounded-full">
               Cari Desa
             </button>
