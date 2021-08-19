@@ -5,6 +5,7 @@ import Home from "./pages/HomePage";
 import FindDesa from "./pages/findDesa";
 import Login from "./auth/login";
 import Register from "./auth/register";
+import Ikl from "./pages/profiledesa/Ikl";
 
 const App = () => {
   return (
@@ -12,6 +13,9 @@ const App = () => {
       <Switch>
         <Route exact path="/caridesa">
           <FindDesa />
+        </Route>
+        <Route exact path="/profiledesa-ikl">
+          <Ikl />
         </Route>
         <Route exact path="/auth/login">
           <Login />
