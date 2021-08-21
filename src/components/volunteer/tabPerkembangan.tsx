@@ -2,8 +2,8 @@
 const TabPerkembangan = () => {
     return (
         <>
-            <div className="">
-                <div className="w-3/4 mx-auto mb-10 border-4">
+            <div className="pt-10">
+                <div className="w-3/4 mx-auto mb-10 border-4 rounded-2xl">
                     <div className="p-10 bg-white rounded-2xl">
                         <div className="text-left mb-5 text-xl font-black">
                             UPDATE #69
