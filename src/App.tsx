@@ -7,6 +7,9 @@ import Login from "./auth/login";
 import Register from "./auth/register";
 import Ikl from "./pages/profiledesa/Ikl";
 import VolunteerDesa from "./pages/VolunteerDesa";
+import Iks from "./pages/profiledesa/Iks";
+import Ike from "./pages/profiledesa/Ike";
+import PeluangPembangunan from "./pages/profiledesa/PeluangPembangunan";
 
 const App = () => {
   return (
@@ -20,6 +23,15 @@ const App = () => {
         </Route>
         <Route exact path="/profiledesa-ikl">
           <Ikl />
+        </Route>
+        <Route exact path="/profiledesa-iks">
+          <Iks />
+        </Route>
+        <Route exact path="/profiledesa-ike">
+          <Ike />
+        </Route>
+        <Route exact path="/profiledesa-peluangpembangunan">
+          <PeluangPembangunan />
         </Route>
         <Route exact path="/auth/login">
           <Login />
