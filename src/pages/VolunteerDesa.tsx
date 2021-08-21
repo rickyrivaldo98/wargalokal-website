@@ -14,6 +14,7 @@ const VolunteerDesa: React.FC = () => {
     const handleTab2 = () => {
         setActiveTab("tab2")
     }
+
     return (
         <>
             <Navbar />
@@ -62,15 +63,16 @@ const VolunteerDesa: React.FC = () => {
                             </ul>
                         </div>
                         {
-                            activeTab === "tab1" ?
-                                <div className="bg-gray-100 mt-10">
-                                    <TabDeskripsi />
-                                </div>
-                                : activeTab === "tab2" ?
+                            {
+                                'tab1':
+                                    <div className="bg-gray-100 mt-10">
+                                        <TabDeskripsi />
+                                    </div>,
+                                'tab2':
                                     <div className="bg-gray-100 mt-10">
                                         <TabPerkembangan />
-                                    </div> :
-                                    <div>OTW</div>
+                                    </div>
+                            }[activeTab]
                         }
 
                     </div>
