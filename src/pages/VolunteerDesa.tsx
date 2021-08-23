@@ -5,6 +5,7 @@ import Navbar from "src/Layout/navbar";
 import headerBg from "../assets/bg.png";
 import { useState } from 'react';
 import TabFAQ from "src/components/volunteer/tabFAQ";
+import TabKomentar from "src/components/volunteer/tabKomentar";
 
 
 const VolunteerDesa = () => {
@@ -17,6 +18,9 @@ const VolunteerDesa = () => {
     }
     const handleTab3 = () => {
         setActiveTab("tab3")
+    }
+    const handleTab4 = () => {
+        setActiveTab("tab4")
     }
 
     return (
@@ -62,7 +66,7 @@ const VolunteerDesa = () => {
                                 <li className={"py-4 px-8 mx-12 " + (activeTab === "tab1" ? "text-green-500 border-b-4 border-green-500" : "text-gray-400")} onClick={handleTab1}>Deskripsi</li>
                                 <li className={"py-4 px-8 mx-12 " + (activeTab === "tab2" ? "text-green-500 border-b-4 border-green-500" : "text-gray-400")} onClick={handleTab2}>Perkembangan</li>
                                 <li className={"py-4 px-8 mx-12 " + (activeTab === "tab3" ? "text-green-500 border-b-4 border-green-500" : "text-gray-400")} onClick={handleTab3}>FAQ</li>
-                                <li className="text-gray-400 py-4 px-8 mx-12">Komentar</li>
+                                <li className={"py-4 px-8 mx-12 " + (activeTab === "tab4" ? "text-green-500 border-b-4 border-green-500" : "text-gray-400")} onClick={handleTab4}>Komentar</li>
                                 <li className="text-gray-400 py-4 px-8 mx-12">Galeri</li>
                             </ul>
                         </div>
@@ -79,6 +83,10 @@ const VolunteerDesa = () => {
                                 'tab3':
                                     <div className="bg-gray-100 mt-10">
                                         <TabFAQ />
+                                    </div>,
+                                'tab4':
+                                    <div className="bg-gray-100 mt-10">
+                                        <TabKomentar />
                                     </div>
                             }[activeTab]
                         }
