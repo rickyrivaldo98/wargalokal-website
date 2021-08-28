@@ -6,7 +6,7 @@ const TabDeskripsi = () => {
                 <div style={{ color: "#38B000" }} className="py-5 text-center text-2xl font-bold">
                     Pemanfaatan Teknologi di Sekolah Desa Menawan
                 </div>
-                <div className="w-2/5 mx-auto pb-10">
+                <div className="w-2/5 lg:w-1/2 mx-auto pb-10">
                     <div className="p-10 bg-white rounded-2xl shadow-xl">
                         <div className="text-center mb-10 text-xl font-black">
                             Deskripsi

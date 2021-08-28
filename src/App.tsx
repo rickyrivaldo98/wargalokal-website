@@ -11,11 +11,16 @@ import Iks from "./pages/profiledesa/Iks";
 import Ike from "./pages/profiledesa/Ike";
 import PeluangPembangunan from "./pages/profiledesa/PeluangPembangunan";
 import ProfileDesa from "./pages/ProfileDesa";
+import Admin from "./pages/admin/Admin";
 
 const App = () => {
   return (
     <>
       <Switch>
+
+        <Route path="/admin">
+          <Admin />
+        </Route>
         <Route exact path="/volunteerdesa">
           <VolunteerDesa />
         </Route>
