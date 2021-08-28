@@ -10,6 +10,7 @@ import VolunteerDesa from "./pages/VolunteerDesa";
 import Iks from "./pages/profiledesa/Iks";
 import Ike from "./pages/profiledesa/Ike";
 import PeluangPembangunan from "./pages/profiledesa/PeluangPembangunan";
+import ProfileDesa from "./pages/ProfileDesa";
 
 const App = () => {
   return (
@@ -29,6 +30,9 @@ const App = () => {
         </Route>
         <Route exact path="/profiledesa-ike">
           <Ike />
+        </Route>
+        <Route exact path="/profiledesa">
+          <ProfileDesa />
         </Route>
         <Route exact path="/profiledesa-peluangpembangunan">
           <PeluangPembangunan />
