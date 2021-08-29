@@ -9,11 +9,13 @@ const NavbarAdmin = () => {
                 <div className="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4">
                     {/* Brand */}
                     <a
-                        className="text-white text-sm uppercase hidden lg:inline-block font-semibold"
+                        className="text-white text-3xl uppercase hidden lg:inline-block font-semibold"
                         href="#pablo"
                         onClick={(e) => e.preventDefault()}
                     >
-                        ini navbar
+                        <div className="fas fa-bars">
+
+                        </div>
                     </a>
 
                     {/* User */}
