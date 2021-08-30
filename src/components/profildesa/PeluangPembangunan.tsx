@@ -1,23 +1,9 @@
-import Header from "src/components/profildesa/header";
-import Profiledesa from "src/components/profildesa/profildesa";
-import Footer from "src/Layout/footer";
-import Navbar from "src/Layout/navbar";
+
 const PeluangPembangunan = () => {
     return (
         <>
-            <Navbar />
-            <Header/>
-            <Profiledesa/>
+         
             <div className="mx-auto font-bold w-11/12">
-                <h2 className="text-2xl text-green-500 mt-10">Status Desa Data IDM Desa Menawan</h2>
-                <div className="mt-6 bg-gray-100 rounded-md">
-                    <ul className="flex">
-                        <li className="text-gray-400 py-4 px-8 mx-12">IKS</li>
-                        <li className="text-gray-400 py-4 px-8 mx-12">IKL</li>
-                        <li className="text-gray-400 py-4 px-8 mx-12">IKE</li>
-                        <li className="text-green-500 border-b-4 border-green-500 py-4 px-8 mx-12">Peluang Pembangunan</li>
-                    </ul>
-                </div>
                 <h2 className="text-xl text-green-500 text-center my-10">Volunteers</h2>
                 <div className="flex flex-wrap justify-around">
                     <div className="card bg-gray-50 rounded-2xl shadow-md w-5/12 h-96 my-5 p-5">
@@ -86,7 +72,6 @@ const PeluangPembangunan = () => {
                         <div className="text-center font-light text-gray-400">Opsi ini akan segera tersedia</div>
                     </div>
             </div>
-            <Footer />
         </>
     );
 };
