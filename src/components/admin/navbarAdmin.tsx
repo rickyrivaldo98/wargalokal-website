@@ -20,6 +20,9 @@ const NavbarAdmin = () => {
 
                     {/* User */}
                     <ul className="flex-col md:flex-row list-none items-center hidden md:flex">
+                        <div className="pr-5 far fa-envelope text-white text-2xl"></div>
+                        <div className="pr-5 far fa-bell text-white text-2xl"></div>
+
                         <UserDropdown />
                     </ul>
                 </div>
