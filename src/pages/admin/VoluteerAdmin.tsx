@@ -20,7 +20,7 @@ const VolunteerAdmin = () => {
                         </div>
                         <div className="text-center">Your Volunteer</div>
 
-                        <div className="flex">
+                        <div className="flex justify-evenly">
                             <div className="my-10 mx-4 rounded-lg w-80 h-80 shadow-lg">
                                 <div className="h-28 bg-red-300 rounded-lg">
                                 </div>
