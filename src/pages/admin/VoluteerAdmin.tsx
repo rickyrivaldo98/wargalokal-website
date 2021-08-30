@@ -14,29 +14,58 @@ const VolunteerAdmin = () => {
                         <div className="rounded-t mb-0 px-4 py-3 border-0">
                             <div className="flex flex-wrap items-center">
                                 <div className="relative w-full px-4 max-w-full flex-grow flex-1">
-                                    <h3 className={"font-semibold text-lg "}>Volunteer</h3>
+                                    <h3 className="font-semibold text-2xl">Volunteer</h3>
                                 </div>
                             </div>
                         </div>
                         <div className="text-center">Your Volunteer</div>
 
                         <div className="flex">
-                            <div className="block w-full overflow-x-auto">
-                                <div className="my-10 mx-8 rounded-lg border-2 w-80 h-80 shadow-lg">
-                                    <div className="h-28 bg-red-300">
-
+                            <div className="my-10 mx-4 rounded-lg w-80 h-80 shadow-lg">
+                                <div className="h-28 bg-red-300 rounded-lg">
+                                </div>
+                                <div className="px-4 py-2">
+                                    <div className="text-sm">
+                                        Desa Makmur Jaya
                                     </div>
-                                    <div className="px-4 py-2">
-                                        <div className="text-sm">
-                                            Desa Makmur Jaya
-                                        </div>
-                                        <div className="text-xs">
-                                            Pemanfaatan Teknologi di Sekolah Desa Makmur Jaya
-                                        </div>
+                                    <div className="text-xs font-black">
+                                        Pemanfaatan Teknologi di Sekolah Desa Makmur Jaya
                                     </div>
                                 </div>
+                                <div className="text-center pt-5">Status Volunteer</div>
+                                <div className="text-center font-black">Menunggu Konfirmasi Desa</div>
+                                <div className="text-center text-white mt-3 py-2 px-3 mx-20 rounded-full bg-primary">Detail</div>
                             </div>
-
+                            <div className="my-10 mx-4 rounded-lg w-80 h-80 shadow-lg">
+                                <div className="h-28 bg-red-300 rounded-lg">
+                                </div>
+                                <div className="px-4 py-2">
+                                    <div className="text-sm">
+                                        Desa Makmur Jaya
+                                    </div>
+                                    <div className="text-xs font-black">
+                                        Pemanfaatan Teknologi di Sekolah Desa Makmur Jaya
+                                    </div>
+                                </div>
+                                <div className="text-center pt-5">Status Volunteer</div>
+                                <div className="text-center font-black">Menunggu Konfirmasi Desa</div>
+                                <div className="text-center text-white mt-3 py-2 px-3 mx-20 rounded-full bg-primary">Detail</div>
+                            </div>
+                            <div className="my-10 mx-4 rounded-lg w-80 h-80 shadow-lg">
+                                <div className="h-28 bg-red-300 rounded-lg">
+                                </div>
+                                <div className="px-4 py-2">
+                                    <div className="text-sm">
+                                        Desa Makmur Jaya
+                                    </div>
+                                    <div className="text-xs font-black">
+                                        Pemanfaatan Teknologi di Sekolah Desa Makmur Jaya
+                                    </div>
+                                </div>
+                                <div className="text-center pt-5">Status Volunteer</div>
+                                <div className="text-center font-black">Menunggu Konfirmasi Desa</div>
+                                <div className="text-center text-white mt-3 py-2 px-3 mx-20 rounded-full bg-primary">Detail</div>
+                            </div>
                         </div>
                     </div>
                 </div>
