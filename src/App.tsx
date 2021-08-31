@@ -1,5 +1,5 @@
-import "./styles/globals.css"
-import "./styles/style.css"
+import "./styles/globals.css";
+import "./styles/style.css";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/HomePage";
 import FindDesa from "./pages/findDesa";
@@ -14,7 +14,6 @@ const App = () => {
   return (
     <>
       <Switch>
-
         <Route path="/admin">
           <Admin />
         </Route>
@@ -39,6 +38,6 @@ const App = () => {
       </Switch>
     </>
   );
-}
+};
 
 export default App;
