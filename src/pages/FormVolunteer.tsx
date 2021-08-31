@@ -115,7 +115,7 @@ export default function FormVolunteer() {
             </label>
             <br></br>
           </div>
-          <p>Syarat & Ketentuan</p>
+          <p className="text-gray-600">Syarat & Ketentuan</p>
           <div className="shadow-sm appearance-none border rounded w-full py-5 px-6 mt-2 text-gray-600 leading-tight focus:outline-none focus:shadow-outline">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga doloremque incidunt consectetur, placeat
             similique corporis sapiente voluptates! Eligendi, ea veniam sequi culpa, harum tenetur, non incidunt

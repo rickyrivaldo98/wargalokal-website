@@ -1,4 +1,4 @@
-// import lampu from "../../assets/lampu.svg";
+import lampu from "../../assets/lampu.svg";
 
 const Profiledesa = () => {
   return (
@@ -35,9 +35,9 @@ const Profiledesa = () => {
                 </tr>
               </tbody>
             </table>
-            <div className="bg-gray-200 p-1 relative rounded-xl">
-              {/* <img src={lampu} alt="" className="absolute bottom-14 right-64" /> */}
-              <p className="text-center text-sm text-gray-600">
+            <div className="bg-gray-200 px-2 relative rounded-xl">
+              <img src={lampu} alt="" className="relative inline bottom-14 right-12" style={{ width: 70 }} />
+              <p className="text-center text-sm text-gray-600 relative bottom-8">
                 Menurut Indikator Desa Mandiri (IDM), Desa Menawan masih berstatus <b>Desa Berkembang</b>. <br></br>Yuk
                 bantu Desa Menawan menjadi Desa Mandiri
               </p>
