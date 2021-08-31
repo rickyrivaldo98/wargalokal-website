@@ -11,14 +11,16 @@ module.exports = {
     extend: {
       colors: {
         green: {
-          light: '#38B000',
-          dark: '#008000'
+          light: "#38B000",
+          dark: "#008000",
         },
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ["disabled"],
+    },
   },
   plugins: [],
 };
