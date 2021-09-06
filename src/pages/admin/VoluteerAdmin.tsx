@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const VolunteerAdmin = () => {
@@ -34,7 +35,9 @@ const VolunteerAdmin = () => {
                                 </div>
                                 <div className="text-center pt-5">Status Volunteer</div>
                                 <div className="text-center font-black">Menunggu Konfirmasi Desa</div>
-                                <div className="text-center text-white mt-3 py-2 px-3 mx-20 rounded-full bg-primary">Detail</div>
+                                <Link to="detail-volunteer-admin">
+                                    <div className="text-center text-white mt-3 py-2 px-3 mx-20 rounded-full bg-primary">Detail</div>
+                                </Link>
                             </div>
                             <div className="my-10 mx-4 rounded-lg w-80 h-80 shadow-lg">
                                 <div className="h-28 bg-red-300 rounded-lg">
