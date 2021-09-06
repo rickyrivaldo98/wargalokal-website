@@ -7,6 +7,7 @@ import { useState } from "react";
 import TabFAQ from "src/components/volunteer/tabFAQ";
 import TabKomentar from "src/components/volunteer/tabKomentar";
 import Profiledesa from "src/components/profildesa/profildesa";
+import { Link } from "react-router-dom";
 
 const VolunteerDesa = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -46,9 +47,11 @@ const VolunteerDesa = () => {
             <div className="flex text-center w-full">
               <div className="w-2/6 py-3">
                 <div>5 Perusahaan Sudah Apply</div>
-                <div className="mt-2 py-2 px-2 bg-primary text-white rounded-full">
-                  Peraturan syarat dan ketentuan disini
-                </div>
+                <Link to="/formvolunteer" >
+                  <div className="mt-2 py-2 px-2 bg-primary text-white rounded-full">
+                    Peraturan syarat dan ketentuan disini
+                  </div>
+                </Link>
               </div>
               <div className="w-3/6 py-6 px-3 self-center">
                 <div className="py-3 bg-primary text-white rounded-full">Apply!</div>
