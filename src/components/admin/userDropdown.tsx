@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const UserDropdown = () => {
     return (
         <>
@@ -12,9 +14,9 @@ const UserDropdown = () => {
                         <ul className="dropdown-menu absolute hidden text-white pt-1 px-5 right-0">
                             <li className="bg-green-nav hover:bg-green-navdark rounded-t-lg">
                                 <div className="flex align-middle justify-center whitespace-no-wrap">
-                                    <a className="py-2 pr-5" href="#">
+                                    <Link className="py-2 pr-5" to="admin/profile">
                                         <i className="fas fa-user-alt py-3 pl-5 pr-3"> </i> Profile
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                             <li className="bg-green-nav hover:bg-green-navdark rounded-b-lg">
@@ -24,22 +26,10 @@ const UserDropdown = () => {
                                     </a>
                                 </div>
                             </li>
-
-                            {/* <li className="">
-                                <a
-                                    className="rounded-b-lg bg-green-nav hover:bg-green-navdark py-2 block whitespace-no-wrap"
-                                    href="#"
-                                >
-                                    Logout
-                                </a>
-                            </li> */}
                         </ul>
                     </div>
                 </div>
             </div>
-            {/* <div className="rounded-full bg-gray-600 w-10 h-10"></div>
-      <div className="text-white self-center px-3">Selamat Datang NGO</div>
-      <div className="fas fa-caret-down self-center text-2xl text-white"></div> */}
         </>
     );
 };

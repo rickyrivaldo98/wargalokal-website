@@ -5,7 +5,7 @@ import Dashboard from "./Dashboard";
 import VolunteerAdmin from "./VoluteerAdmin";
 import NavbarAdmin from "src/components/admin/navbarAdmin";
 import Detailvolunteer from "./Detailvolunteer";
-import EditProfile from "./EditProfile";
+import Profile from "./Profile";
 
 const Admin = () => {
     return (
@@ -18,8 +18,8 @@ const Admin = () => {
                         <Route path="/admin/detail-volunteer-admin">
                             <Detailvolunteer />
                         </Route>
-                        <Route path="/admin/edit">
-                            <EditProfile />
+                        <Route path="/admin/profile">
+                            <Profile />
                         </Route>
                         <Route path="/admin/volunteer-admin">
                             <VolunteerAdmin />

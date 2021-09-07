@@ -1,26 +1,23 @@
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
 const Sidebar = () => {
-
     const [collapseShow, setCollapseShow] = useState("hidden");
     const [activeTab, setActiveTab] = useState("home");
 
     useEffect(() => {
-        window.location.href.indexOf("/admin/detail-volunteer-admin") !== -1 ? setActiveTab("volunteer") : null
-        window.location.href.indexOf("/admin/volunteer-admin") !== -1 ? setActiveTab("volunteer") : null
+        window.location.href.indexOf("/admin/detail-volunteer-admin") !== -1 ? setActiveTab("volunteer") : null;
+        window.location.href.indexOf("/admin/volunteer-admin") !== -1 ? setActiveTab("volunteer") : null;
 
-        console.log(activeTab)
-    })
+        console.log(activeTab);
+    });
 
     const handleTab1 = () => {
-        setActiveTab("home")
+        setActiveTab("home");
     };
     const handleTab2 = () => {
-        setActiveTab("volunteer")
-    }
+        setActiveTab("volunteer");
+    };
     return (
         <>
             <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-no-wrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
@@ -31,7 +28,6 @@ const Sidebar = () => {
                         onClick={() => setCollapseShow("bg-white m-2 py-3 px-6")}
                     >
                         <i className="fas fa-bars"></i>
-
                     </button>
                     <Link
                         className="md:block text-center md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-xl  font-bold p-4 px-0"
@@ -89,9 +85,7 @@ const Sidebar = () => {
                                     <i
                                         className={
                                             "fas fa-home mr-2 text-sm " +
-                                            (activeTab === "home"
-                                                ? "opacity-75"
-                                                : "text-gray-300")
+                                            (activeTab === "home" ? "opacity-75" : "text-gray-300")
                                         }
                                     ></i>
                                     Home
@@ -101,7 +95,8 @@ const Sidebar = () => {
                                 <Link
                                     className={
                                         "text-base pl-3 py-3 font-bold block " +
-                                        (window.location.href.indexOf("/admin/volunteer-admin") !== -1 || window.location.href.indexOf("/admin/detail-volunteer-admin") !== -1
+                                        (window.location.href.indexOf("/admin/volunteer-admin") !== -1 ||
+                                        window.location.href.indexOf("/admin/detail-volunteer-admin") !== -1
                                             ? "text-green-700 hover:text-green-500 bg-gray-100 border-l-8 border-green-500"
                                             : "text-gray-700 hover:text-gray-500")
                                     }
@@ -111,7 +106,8 @@ const Sidebar = () => {
                                     <i
                                         className={
                                             "fas fa-user-friends mr-2 text-sm " +
-                                            (window.location.href.indexOf("/admin/volunteer-admin") !== -1 || window.location.href.indexOf("/admin/detail-volunteer-admin") !== -1
+                                            (window.location.href.indexOf("/admin/volunteer-admin") !== -1 ||
+                                            window.location.href.indexOf("/admin/detail-volunteer-admin") !== -1
                                                 ? "opacity-75"
                                                 : "text-gray-300")
                                         }
@@ -125,6 +121,6 @@ const Sidebar = () => {
             </nav>
         </>
     );
-}
+};
 
 export default Sidebar;

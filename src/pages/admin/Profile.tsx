@@ -1,4 +1,4 @@
-export default function EditProfile() {
+export default function Profile() {
     return (
         <>
             <div className="flex flex-wrap mt-4">
@@ -13,18 +13,16 @@ export default function EditProfile() {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-10 w-full flex justify-evenly">
-                            <div className="">
-                                <div className="text-3xl font-black">100 Desa</div>
-                                <div>Kota Semarang</div>
-                            </div>
-                            <div className="">
-                                <div className="text-3xl font-black">1 Desa</div>
-                                <div>Kota Semarang</div>
-                            </div>
-                            <div className="">
-                                <div className="text-3xl font-black">1 Desa</div>
-                                <div>Kota Semarang</div>
+                        <div className="py-10 w-full flex justify-center">
+                            <div className="flex flex-col">
+                                <div className="flex justify-center">
+                                    <div className=" w-48 h-48 bg-gray-400 rounded-full"></div>
+                                    <div className="text-green-light">Edit</div>
+                                </div>
+                                <div className=" flex justify-center mr-4 my-4">
+                                    <div className=" text-4xl mx-2">Name Here</div>
+                                    <div className="text-green-light">Edit</div>
+                                </div>
                             </div>
                         </div>
                     </div>
