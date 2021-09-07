@@ -5,29 +5,33 @@ import Dashboard from "./Dashboard";
 import VolunteerAdmin from "./VoluteerAdmin";
 import NavbarAdmin from "src/components/admin/navbarAdmin";
 import Detailvolunteer from "./Detailvolunteer";
+import EditProfile from "./EditProfile";
 
 const Admin = () => {
-  return (
-    <>
-      <Sidebar />
-      <div className="relative md:ml-64">
-        <NavbarAdmin />
-        <div className="px-4 md:px-10 mx-auto w-full">
-          <Switch>
-            <Route path="/admin/detail-volunteer-admin">
-              <Detailvolunteer />
-            </Route>
-            <Route path="/admin/volunteer-admin">
-              <VolunteerAdmin />
-            </Route>
-            <Route exact path="/admin">
-              <Dashboard />
-            </Route>
-          </Switch>
-        </div>
-      </div>
-    </>
-  );
+    return (
+        <>
+            <Sidebar />
+            <div className="relative md:ml-64">
+                <NavbarAdmin />
+                <div className="px-4 md:px-10 mx-auto w-full">
+                    <Switch>
+                        <Route path="/admin/detail-volunteer-admin">
+                            <Detailvolunteer />
+                        </Route>
+                        <Route path="/admin/edit">
+                            <EditProfile />
+                        </Route>
+                        <Route path="/admin/volunteer-admin">
+                            <VolunteerAdmin />
+                        </Route>
+                        <Route exact path="/admin">
+                            <Dashboard />
+                        </Route>
+                    </Switch>
+                </div>
+            </div>
+        </>
+    );
 };
 
 export default Admin;

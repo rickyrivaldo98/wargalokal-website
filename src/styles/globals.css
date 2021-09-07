@@ -21,11 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 5%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 5%, rgba(0, 0, 0, 0) 100%);
   z-index: -1;
 }
 
@@ -97,4 +93,9 @@
 
 .progressbar li.active + li:after {
   border: 3px solid #008000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  z-index: 999;
 }
