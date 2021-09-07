@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 const UserDropdown = () => {
+    // const history = useHistory();
+
     return (
         <>
             <div className="flex">
@@ -14,7 +17,7 @@ const UserDropdown = () => {
                         <ul className="dropdown-menu absolute hidden text-white pt-1 px-5 right-0">
                             <li className="bg-green-nav hover:bg-green-navdark rounded-t-lg">
                                 <div className="flex align-middle justify-center whitespace-no-wrap">
-                                    <Link className="py-2 pr-5" to="admin/profile">
+                                    <Link className="py-2 pr-5" to="/admin/profile" replace>
                                         <i className="fas fa-user-alt py-3 pl-5 pr-3"> </i> Profile
                                     </Link>
                                 </div>
