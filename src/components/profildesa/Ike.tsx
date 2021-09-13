@@ -12,13 +12,13 @@ const Ike = () => {
                 <div className="grid grid-cols-2  justify-around my-5">
                     <div className="card bg-gray-50 rounded-2xl shadow-md my-5">
                         <h3 className="text-center my-5 text-xl text-green-500">Dimensi Keberagaman Produksi</h3>
-                        <div className="container">
+                        <div className="container w-2/3 m-auto">
                             <PieChartPendidikan/>
                         </div>
                     </div>
                     <div className="card bg-gray-50 rounded-2xl shadow-md my-5">
                         <h3 className="text-center my-5 text-xl text-green-500">Dimensi Perdagangan</h3>
-                        <div className="container">
+                        <div className="container w-2/3 m-auto">
                             <PieChartPendidikan/>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ const Ike = () => {
                     </div>
                     <div className="card bg-gray-50 rounded-2xl shadow-md my-5">
                         <h3 className="text-center my-5 text-xl text-green-500">Dimensi Lembaga Ekonomi</h3>
-                        <div className="container">
+                        <div className="container w-2/3 m-auto">
                             <PieChartPendidikan/>
                         </div>
                     </div>

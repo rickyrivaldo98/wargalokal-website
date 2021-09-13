@@ -145,7 +145,7 @@ const FindDesa = () => {
                 <p>Rekomendasi Warga Lokal</p>
               </div>
             </div>
-            <div className="flex ">
+            <div className="flex-none md:flex  ">
               <div className="card  min-w-sm px-16 transition-shadow shadow-xl  bg-white hover:shadow-xl min-w-max my-5 relative rounded mx-2">
                 <div className="absolute right-0 p-3 ">
                   <p className="bg-primary text-white p-2 text-sm rounded-full">Open Volunteer</p>

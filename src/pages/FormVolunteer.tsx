@@ -10,7 +10,7 @@ export default function FormVolunteer() {
   return (
     <>
       <div className=" flex items-center justify-center bg-gray-50">
-        <form id="form" className="bg-white px-36 pt-6 pb-8 mb-4 w-4/6 my-10 border-2 shadow-sm">
+        <form id="form" className="bg-white md:px-36 pt-6 pb-8 mb-4 p-5 w-full md:w-4/6 my-10 border-2 shadow-sm">
           <br></br>
           <h1 className="block text-gray-700 font-bold text-4xl text-center">Form Kebutuhan Volunteer</h1>
           <div className="border-b-2 border-gray-200 my-8"></div>

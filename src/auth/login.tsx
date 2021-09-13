@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Navbar from "src/Layout/navbar";
 import petani from "../assets/icons/petani.png";
 const Login = () => {
 
@@ -7,13 +8,17 @@ const Login = () => {
 
   return (
     <>
+    <div className="z-1">
+    <Navbar/>
+
+    </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="left-section bg-color-gray relative h-screen">
-          <img className="bottom-0 m-auto absolute " src={petani} alt="" />
+        <div className="left-section bg-color-gray relative md:h-screen">
+          <img className="bottom-0 m-auto absolute z-0" src={petani} alt="" />
         </div>
-        <div className="right-section m-auto">
+        <div className="pt-10 md:pt-0 right-section m-auto">
           <form method="post" action="#">
-            <h1 className=" text-5xl font-semibold tracking-wide mb-5">
+            <h1 className="text-2xl md:text-5xl font-semibold tracking-wide mb-5">
               Sign in to <span className="text-green-light font-bold">Warga Lokal</span>
             </h1>
             <div>

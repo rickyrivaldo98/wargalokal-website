@@ -19,16 +19,16 @@ const Home = () => {
             <div className="flex justify-center items-center">
               <h1
                 data-aos="fade-up"
-                className="md:text-8xl font-bold text-lg text-white mt-48 tracking-wider text-center"
+                className="md:text-8xl font-bold text-2xl text-white mt-60 md:mt-48 tracking-wider text-center"
               >
                 Warga <span style={{ color: "#33C633" }}>Lokal</span>
               </h1>
             </div>
-            <div className="mt-10 flex flex-col justify-center items-center mt-2">
+            <div className="mt-6 md:mt-10 flex flex-col justify-center items-center mt-2">
               <p data-aos="fade-up" className="filter drop-shadow-md text-white text-lg tracking-wide text-center">
                 Bergerak Wujudkan Desa Mandiri
               </p>
-              <button className="mt-5 transition ease-in bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded-full">
+              <button style={{ background: "#33C633" }} className="mt-5 transition ease-in  hover:bg-green-700 text-white py-2 px-4 rounded-full">
                 Cari Desa
               </button>
             </div>
@@ -154,23 +154,22 @@ const Home = () => {
           </div>
         </div>
         <div className="section-about">
-          <div className="flex h-screen">
+       
             <div className="m-auto">
               <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="m-auto">
-                  <h3 className="text-3xl font-bold tracking-wide">Tentang Kami</h3>
-                  <p style={{ color: "#6C757D" }} className="w-2/3">
+                <div className="m-auto p-5 md:p-0">
+                  <h3 className="text-xl md:text-3xl font-bold tracking-wide">Tentang Kami</h3>
+                  <p style={{ color: "#6C757D" }} className="w-full md:w-2/3">
                     WargaLokal merupakan social network platform untuk menjembatani Desa dengan jejaring sosial mereka.
                   </p>
                 </div>
                 <img src={tentang} alt="" />
               </div>
             </div>
-          </div>
         </div>
         <div className="section-vidprol">
           <div className="flex justify-center items-center">
-            <h1 className="text-4xl font-bold tracking-wide">
+            <h1 className="text-xl md:text-4 xl font-bold tracking-wide">
               Video Profile <span style={{ color: "#33C633" }}>Warga Lokal</span>
             </h1>
             <div
@@ -202,24 +201,24 @@ const Home = () => {
             <div className="m-auto">
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <img src={tujuanBG} alt="" />
-                <div className="m-auto pl-20">
-                  <h3 className="text-3xl font-bold tracking-wide mb-20">Tujuan Kami</h3>
-
+                <div className="m-auto p-5 md:pl-20">
+                  <h3 className="text-2xl md:text-3xl text-center md:text-left font-bold tracking-wide mb-10  md:mb-20">Tujuan Kami</h3>
+                  
                   <div className="row-tujuan mb-20">
-                    <h3 className="text-3xl font-bold tracking-wide">Connected Networks</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold tracking-wide">Connected Networks</h3>
                     <p style={{ color: "#6C757D" }} className="w-2/3">
                       Mempertemukan Desa dengan jaringan sosial diluar untuk memperbanyak Desa Mandiri
                     </p>
                   </div>
                   <div className="row-tujuan mb-20">
-                    <h3 className="text-3xl font-bold tracking-wide">Bridging Villages</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold tracking-wide">Bridging Villages</h3>
                     <p style={{ color: "#6C757D" }} className="w-2/3">
                       Warga Lokal memiliki peran sebagai pengisi dari adanya kekosongan peran antara social capital dan
                       economic capital untuk mewujudkan Desa Mandiri.
                     </p>
                   </div>
                   <div className="row-tujuan mb-20">
-                    <h3 className="text-3xl font-bold tracking-wide">Helping Villages</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold tracking-wide">Helping Villages</h3>
                     <p style={{ color: "#6C757D" }} className="w-2/3">
                       Membantu Desa memenuhi tiga dimensi Indeks Desa Mandiri Sosial, Ekonomi, dan Lingkungan
                     </p>

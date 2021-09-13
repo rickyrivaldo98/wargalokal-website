@@ -6,7 +6,7 @@ const Profiledesa = () => {
       <div className=" pt-8 pb-6 shadow-md rounded-3xl ">
         <div className="mx-24">
           <div className="text-2xl font-bold text-green-500">Profile Desa Menawan</div>
-          <div className="grid grid-cols-3 gap-52 my-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-52 my-2">
             <table className="table-auto">
               <tbody>
                 <tr>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Navbar from "src/Layout/navbar";
 import petani from "../assets/icons/petani.png";
 const Register = () => {
 
@@ -26,11 +27,12 @@ const Register = () => {
 
   return (
     <>
+    <Navbar/>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="left-section bg-color-gray relative h-screen">
+        <div className="left-section bg-color-gray relative md:h-screen">
           <img className="bottom-0 m-auto absolute " src={petani} alt="" />
         </div>
-        <div className="right-section m-auto">
+        <div className="pt-10 md:pt-0 right-section m-auto">
           <form method="post" action="#" onSubmit={handleSubmit}>
             <h1 className=" text-5xl font-semibold tracking-wide mb-5">
               Sign up to <span className="font-bold text-green-light">Warga Lokal</span>

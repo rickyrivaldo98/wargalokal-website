@@ -33,7 +33,7 @@ const ProfileDesa = () => {
         <div className="bg-white mt-20">
           <div className="mx-auto w-11/12">
             <div className="mt-6 bg-gray-100 rounded-md">
-              <ul className="flex">
+              <ul className="flex flex-col md:flex-none">
                 <li
                   className={
                     "py-4 px-8 mx-12 " +
