@@ -38,14 +38,14 @@ const VolunteerDesa = () => {
           <div className="bg_overlay_profile_desa"></div>
           <div className="flex min-h-full">
             <div className="m-auto text-white text-center">
-              <div className="text-5xl  font-semibold tracking-wider">Desa Menawan</div>
+              <div className="text-3xl md:text-5xl font-semibold tracking-wider">Desa Menawan</div>
               <div className="mt-3 font-extralight">Kabupaten Kudus, Jawa Tengah</div>
-              <div className="mt-8 font-bold text-2xl">Pemanfaatan Teknologi di Sekolah Desa Makmur Jaya</div>
+              <div className="mt-8 font-bold text-lg md:text-2xl">Pemanfaatan Teknologi di Sekolah Desa Makmur Jaya</div>
             </div>
           </div>
-          <div className="absolute h-22 w-1/2 bg-white border-4 -bottom-16 inset-center rounded-2xl px-4 py-3">
-            <div className="flex text-center w-full">
-              <div className="w-2/6 py-3">
+          <div className="absolute h-22 w-2/3 sm:w-1/2 bg-white border-4 -bottom-48 sm:-bottom-16 inset-center rounded-2xl px-4 py-3">
+            <div className="flex flex-col md:flex-row text-center w-full">
+              <div className="w-full sm:w-2/6 py-3">
                 <div>5 Perusahaan Sudah Apply</div>
                 <Link to="/formvolunteer" >
                   <div className="mt-2 py-2 px-2 bg-primary text-white rounded-full">
@@ -53,7 +53,7 @@ const VolunteerDesa = () => {
                   </div>
                 </Link>
               </div>
-              <div className="w-3/6 py-6 px-3 self-center">
+              <div className="w-full sm:w-3/6 py-6 px-3 self-center">
                 <div className="py-3 bg-primary text-white rounded-full">Apply!</div>
               </div>
               <div className="w-1/6"></div>
@@ -65,7 +65,7 @@ const VolunteerDesa = () => {
         <div className="bg-white mt-20">
           <div className="mx-auto w-11/12">
             <div className="mt-6 bg-gray-100 rounded-md">
-              <ul className="flex">
+              <ul className="flex flex-col flex-wrap lg:flex-row text-center">
                 <li
                   className={
                     "py-4 px-8 mx-12 " +

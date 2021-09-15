@@ -12,12 +12,12 @@ const TabKomentar = () => {
             <div className="flex mx-10 justify-end pb-5">
                 <div className="bg-primary px-5 py-3 text-white rounded-lg">Komentar</div>
             </div>
-            <div className="py-10 text-sm">
-                <div className="mx-10 mb-10 border-4 rounded-2xl">
+            <div className="py-5 text-sm">
+                <div className="mx-10 mb-10  rounded-2xl">
                     <div className="p-10 bg-white rounded-2xl">
-                        <div className="flex mb-5 ">
-                            <div className="rounded-full bg-primary w-20 h-20"></div>
-                            <div className="w-5/6 ml-5 self-center">
+                        <div className="flex flex-col sm:flex-row mb-5 ">
+                            <div className="rounded-full bg-primary w-20 h-20 "></div>
+                            <div className="w-full sm:w-5/6 sm:ml-5 self-center">
                                 <div>Vin Diesel</div>
                                 <div>24 Maret 2021, 17:52 PM</div>
                                 <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam mauris ante, quis consectetur dui semper ac. Nulla ultricies, mi vel dignissim condimentum, enim metus pulvinar ex, non placerat arcu massa eget sapien. Fusce rutrum, nisl non ornare hendrerit, massa enim gravida tortor, scelerisque fringilla ipsum justo ut augue. Donec efficitur sagittis mollis. Nulla pellentesque dignissim diam, at rutrum nulla mollis eget. Ut fringilla, ex id maximus vehicula, sem enim scelerisque mauris, sit amet efficitur ante ligula scelerisque enim. In lorem odio, pellentesque vel elit sed, consequat rhoncus leo. Nulla ut congue libero, vel dignissim risus. Cras malesuada mi ut urna hendrerit, eu sagittis sem consectetur. Vivamus non est mi.
