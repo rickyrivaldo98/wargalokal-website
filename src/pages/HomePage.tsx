@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <Navbar />
       <div className="overflow-hidden">
-        <div className="jumbotron relative mb-48 relative z-10" style={{ backgroundImage: `url(${headerBg})` }}>
+        <div className="jumbotron relative mb-48 z-10" style={{ backgroundImage: `url(${headerBg})` }}>
           <div className="bg-overlay"></div>
           <div>
             <div className="flex justify-center items-center">
@@ -154,18 +154,18 @@ const Home = () => {
           </div>
         </div>
         <div className="section-about">
-       
-            <div className="m-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="m-auto p-5 md:p-0">
-                  <h3 className="text-xl md:text-3xl font-bold tracking-wide">Tentang Kami</h3>
-                  <p style={{ color: "#6C757D" }} className="w-full md:w-2/3">
-                    WargaLokal merupakan social network platform untuk menjembatani Desa dengan jejaring sosial mereka.
-                  </p>
-                </div>
-                <img src={tentang} alt="" />
+
+          <div className="m-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="m-auto p-5 md:p-0">
+                <h3 className="text-xl md:text-3xl font-bold tracking-wide">Tentang Kami</h3>
+                <p style={{ color: "#6C757D" }} className="w-full md:w-2/3">
+                  WargaLokal merupakan social network platform untuk menjembatani Desa dengan jejaring sosial mereka.
+                </p>
               </div>
+              <img src={tentang} alt="" />
             </div>
+          </div>
         </div>
         <div className="section-vidprol">
           <div className="flex justify-center items-center">
@@ -203,7 +203,7 @@ const Home = () => {
                 <img src={tujuanBG} alt="" />
                 <div className="m-auto p-5 md:pl-20">
                   <h3 className="text-2xl md:text-3xl text-center md:text-left font-bold tracking-wide mb-10  md:mb-20">Tujuan Kami</h3>
-                  
+
                   <div className="row-tujuan mb-20">
                     <h3 className="text-2xl md:text-3xl font-bold tracking-wide">Connected Networks</h3>
                     <p style={{ color: "#6C757D" }} className="w-2/3">
