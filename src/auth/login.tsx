@@ -23,7 +23,7 @@ const Login = () => {
             </h1>
             <div>
               <span className="text-lg text-gray-400">
-                Belum daftar ?
+                Belum daftar?
               </span>
               <span className="text-green-light font-semibold tracking-wider">
                 &nbsp;Daftar
