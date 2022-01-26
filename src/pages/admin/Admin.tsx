@@ -6,32 +6,48 @@ import VolunteerAdmin from "./VoluteerAdmin";
 import NavbarAdmin from "src/components/admin/navbarAdmin";
 import Detailvolunteer from "./Detailvolunteer";
 import Profile from "./Profile";
+import { FormFAQ } from "./FormFAQ";
+import { FormArticle } from "./FormArticle";
+import { FormGallery } from "./FormGallery";
+import { FormGraph } from "./FormGraph";
 
 const Admin = () => {
-    return (
-        <>
-            <Sidebar />
-            <div className="relative md:ml-64">
-                <NavbarAdmin />
-                <div className="px-4 md:px-10 mx-auto w-full">
-                    <Switch>
-                        <Route path="/admin/detail-volunteer-admin">
-                            <Detailvolunteer />
-                        </Route>
-                        <Route path="/admin/profile">
-                            <Profile />
-                        </Route>
-                        <Route path="/admin/volunteer-admin">
-                            <VolunteerAdmin />
-                        </Route>
-                        <Route exact path="/admin">
-                            <Dashboard />
-                        </Route>
-                    </Switch>
-                </div>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <Sidebar />
+      <div className="relative md:ml-64">
+        <NavbarAdmin />
+        <div className="px-4 md:px-10 mx-auto w-full">
+          <Switch>
+            <Route path="/admin/detail-volunteer-admin">
+              <Detailvolunteer />
+            </Route>
+            <Route path="/admin/profile">
+              <Profile />
+            </Route>
+            <Route path="/admin/volunteer-admin">
+              <VolunteerAdmin />
+            </Route>
+            <Route exact path="/admin">
+              <Dashboard />
+            </Route>
+            <Route exact path="/admin/formfaq">
+              <FormFAQ />
+            </Route>
+            <Route exact path="/admin/formarticle">
+              <FormArticle />
+            </Route>
+            <Route exact path="/admin/formgallery">
+              <FormGallery />
+            </Route>
+            <Route exact path="/admin/formgraph">
+              <FormGraph />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Admin;

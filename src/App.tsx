@@ -9,7 +9,7 @@ import VolunteerDesa from "./pages/VolunteerDesa";
 
 import ProfileDesa from "./pages/ProfileDesa";
 import Admin from "./pages/admin/Admin";
-import FormVolunteer from "./pages/FormVolunteer";
+import { FormVolunteer } from "./pages/FormVolunteer";
 
 const App = () => {
   return (
