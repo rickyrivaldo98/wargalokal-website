@@ -2,6 +2,7 @@ import Footer from "../Layout/footer";
 import Navbar from "../Layout/navbar";
 import FilterSektor from "../components/desa/filterSektor";
 import Sektor from "../components/desa/sektorDesa";
+import { Link } from "react-router-dom";
 
 const FindDesa = () => {
   return (
@@ -36,9 +37,11 @@ const FindDesa = () => {
                   <span className="text-md whitespace-nowrap text-gray-600">boussadjra</span>
                   <p className="text-sm text-gray-500">Volunteer On technology</p>
                   <div className="py-2 flex space-x-2">
+                   <Link to="/formvolunteer">
                     <button className="flex justify-center  max-h-max whitespace-nowrap focus:outline-none  focus:ring  focus:border-blue-300 rounded max-w-max text-gray-100 bg-primary hover:bg-green-600 px-4 py-1 flex items-center hover:shadow-lg">
                       APPLY
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -66,9 +69,11 @@ const FindDesa = () => {
                   <span className="text-md whitespace-nowrap text-gray-600">boussadjra</span>
                   <p className="text-sm text-gray-500">Volunteer On technology</p>
                   <div className="py-2 flex space-x-2">
+                   <Link to="/formvolunteer">
                     <button className="flex justify-center  max-h-max whitespace-nowrap focus:outline-none  focus:ring  focus:border-blue-300 rounded max-w-max text-gray-100 bg-primary hover:bg-green-600 px-4 py-1 flex items-center hover:shadow-lg">
                       APPLY
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -96,9 +101,11 @@ const FindDesa = () => {
                   <span className="text-md whitespace-nowrap text-gray-600">boussadjra</span>
                   <p className="text-sm text-gray-500">Volunteer On technology</p>
                   <div className="py-2 flex space-x-2">
+                   <Link to="/formvolunteer">
                     <button className="flex justify-center  max-h-max whitespace-nowrap focus:outline-none  focus:ring  focus:border-blue-300 rounded max-w-max text-gray-100 bg-primary hover:bg-green-600 px-4 py-1 flex items-center hover:shadow-lg">
                       APPLY
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -126,9 +133,11 @@ const FindDesa = () => {
                   <span className="text-md whitespace-nowrap text-gray-600">boussadjra</span>
                   <p className="text-sm text-gray-500">Volunteer On technology</p>
                   <div className="py-2 flex space-x-2">
+                   <Link to="/formvolunteer">
                     <button className="flex justify-center  max-h-max whitespace-nowrap focus:outline-none  focus:ring  focus:border-blue-300 rounded max-w-max text-gray-100 bg-primary hover:bg-green-600 px-4 py-1 flex items-center hover:shadow-lg">
                       APPLY
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -168,9 +177,11 @@ const FindDesa = () => {
                       <span className="text-md whitespace-nowrap text-gray-600">boussadjra</span>
                       <p className="text-sm text-gray-500">Volunteer On technology</p>
                       <div className="py-2 flex space-x-2">
+                        <Link to="/formvolunteer">
                         <button className="flex justify-center  max-h-max whitespace-nowrap focus:outline-none  focus:ring  focus:border-blue-300 rounded max-w-max text-gray-100 bg-primary hover:bg-green-600 px-4 py-1 flex items-center hover:shadow-lg">
                           APPLY
                         </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -199,9 +210,11 @@ const FindDesa = () => {
                       <span className="text-md whitespace-nowrap text-gray-600">boussadjra</span>
                       <p className="text-sm text-gray-500">Volunteer On technology</p>
                       <div className="py-2 flex space-x-2">
+                        <Link to="/formvolunteer">
                         <button className="flex justify-center  max-h-max whitespace-nowrap focus:outline-none  focus:ring  focus:border-blue-300 rounded max-w-max text-gray-100 bg-primary hover:bg-green-600 px-4 py-1 flex items-center hover:shadow-lg">
                           APPLY
                         </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
