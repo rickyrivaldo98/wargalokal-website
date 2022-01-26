@@ -5,7 +5,7 @@ import { Volunteer } from "./models/Volunteer";
 
 export const createVolunteer = async (volunteer: Volunteer) => {
   const { Name, Email, PhoneNumber, MembersCount, StartDate, EndDate, IdCard, Proposal } = volunteer;
-  const response = await axios.post(
+  return axios.post(
     apiUrl + `/api/v1/volunteer`,
     {
       Name: Name,
@@ -19,5 +19,4 @@ export const createVolunteer = async (volunteer: Volunteer) => {
     },
     axiosConfig
   );
-  return response;
 };

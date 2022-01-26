@@ -6,10 +6,6 @@ import VolunteerAdmin from "./VoluteerAdmin";
 import NavbarAdmin from "src/components/admin/navbarAdmin";
 import Detailvolunteer from "./Detailvolunteer";
 import Profile from "./Profile";
-import { FormFAQ } from "./FormFAQ";
-import { FormArticle } from "./FormArticle";
-import { FormGallery } from "./FormGallery";
-import { FormGraph } from "./FormGraph";
 
 const Admin = () => {
   return (
@@ -30,18 +26,6 @@ const Admin = () => {
             </Route>
             <Route exact path="/admin">
               <Dashboard />
-            </Route>
-            <Route exact path="/admin/formfaq">
-              <FormFAQ />
-            </Route>
-            <Route exact path="/admin/formarticle">
-              <FormArticle />
-            </Route>
-            <Route exact path="/admin/formgallery">
-              <FormGallery />
-            </Route>
-            <Route exact path="/admin/formgraph">
-              <FormGraph />
             </Route>
           </Switch>
         </div>
