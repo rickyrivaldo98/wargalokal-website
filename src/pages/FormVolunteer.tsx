@@ -1,16 +1,91 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
+import { createVolunteer } from "src/api/volunteer/Volunteer";
 
-export default function FormVolunteer() {
+export const FormVolunteer = () => {
   const [agree, setAgree] = useState(false);
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [phoneNumber, setPhoneNumber] = useState<string>("");
+  const [membersCount, setMembersCount] = useState<string>("");
+  const [startDate, setStartDate] = useState<string>("");
+  const [endDate, setEndDate] = useState<string>("");
+  const [idCard, setIdCard] = useState<string>("");
+  const [proposal, setProposal] = useState<string>("");
+  const onNameChange = (event: FormEvent<HTMLInputElement>) => {
+    const value = event.currentTarget.value;
+    setName(value);
+  };
+
+  const onEmailChange = (event: FormEvent<HTMLInputElement>) => {
+    const value = event.currentTarget.value;
+    setEmail(value);
+  };
+
+  const onPhoneNumberChange = (event: FormEvent<HTMLInputElement>) => {
+    const value = event.currentTarget.value;
+    setPhoneNumber(value);
+  };
+
+  const onMembersCountChange = (event: FormEvent<HTMLInputElement>) => {
+    const value = event.currentTarget.value;
+    setMembersCount(value);
+  };
+
+  const onStartDateChange = (event: FormEvent<HTMLInputElement>) => {
+    const value = event.currentTarget.value;
+    setStartDate(value);
+  };
+
+  const onEndDateChange = (event: FormEvent<HTMLInputElement>) => {
+    const value = event.currentTarget.value;
+    setEndDate(value);
+  };
+
+  const onIdCardChange = (event: FormEvent<HTMLInputElement>) => {
+    const value = event.currentTarget.value;
+    setIdCard(value);
+  };
+
+  const onProposalChange = (event: FormEvent<HTMLInputElement>) => {
+    const value = event.currentTarget.value;
+    setProposal(value);
+  };
 
   const checkboxHandler = () => {
     setAgree(!agree);
   };
 
+  const saveVolunteer = async (event: FormEvent) => {
+    event.preventDefault();
+    const volunteer = {
+      Name: name,
+      Email: email,
+      PhoneNumber: phoneNumber,
+      MembersCount: membersCount,
+      StartDate: startDate,
+      EndDate: endDate,
+      IdCard: idCard,
+      Proposal: proposal,
+    };
+    console.log(volunteer);
+    try {
+      await createVolunteer(volunteer);
+      console.log("SUCCESS!");
+    } catch(error) {
+      console.log(error);
+    } finally {
+      console.log("DONE");
+    }
+  };
+
   return (
     <>
       <div className=" flex items-center justify-center bg-gray-50">
-        <form id="form" className="bg-white md:px-36 pt-6 pb-8 mb-4 p-5 w-full md:w-4/6 my-10 border-2 shadow-sm">
+        <form
+          onSubmit={saveVolunteer}
+          id="form"
+          className="bg-white md:px-36 pt-6 pb-8 mb-4 p-5 w-full md:w-4/6 my-10 border-2 shadow-sm"
+        >
           <br></br>
           <h1 className="block text-gray-700 font-bold text-4xl text-center">Form Kebutuhan Volunteer</h1>
           <div className="border-b-2 border-gray-200 my-8"></div>
@@ -24,6 +99,7 @@ export default function FormVolunteer() {
               id="name"
               type="text"
               placeholder="Masukkan nama"
+              onChange={onNameChange}
               required
             />
           </div>
@@ -37,6 +113,7 @@ export default function FormVolunteer() {
               id="email"
               type="text"
               placeholder="Masukkan email"
+              onChange={onEmailChange}
               required
             />
           </div>
@@ -51,6 +128,7 @@ export default function FormVolunteer() {
               id="tel"
               type="tel"
               placeholder="Masukkan nomor telepon"
+              onChange={onPhoneNumberChange}
               required
             />
           </div>
@@ -65,19 +143,35 @@ export default function FormVolunteer() {
               id="anggota"
               type="number"
               placeholder="Masukkan jumlah anggota"
+              onChange={onMembersCountChange}
               required
             />
           </div>
 
           <div className="mb-4">
             <label className="block text-gray-600 mb-2" htmlFor="Date">
-              Timeline Kegiatan Volunteer
+              Timeline Kegiatan Volunteer - Mulai
             </label>
             <input
               className="shadow-sm appearance-none border rounded w-full py-5 px-6 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
               name="date"
               id="date"
               type="date"
+              onChange={onStartDateChange}
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-gray-600 mb-2" htmlFor="Date">
+              Timeline Kegiatan Volunteer - Berakhir
+            </label>
+            <input
+              className="shadow-sm appearance-none border rounded w-full py-5 px-6 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
+              name="date"
+              id="date"
+              type="date"
+              onChange={onEndDateChange}
               required
             />
           </div>
@@ -92,6 +186,7 @@ export default function FormVolunteer() {
                   name="idcard"
                   accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps"
                   className=""
+                  onChange={onIdCardChange}
                   required
                 />
               </div>
@@ -109,6 +204,7 @@ export default function FormVolunteer() {
                   name="idcard"
                   accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps"
                   className=""
+                  onChange={onProposalChange}
                   required
                 />
               </div>
@@ -150,4 +246,4 @@ export default function FormVolunteer() {
       </div>
     </>
   );
-}
+};
