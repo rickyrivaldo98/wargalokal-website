@@ -8,8 +8,8 @@ const Register = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isValid, setIsValid] = useState(true);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
     const data = { email, password, confirmPassword };
     console.log(data);
     validatePassword();
