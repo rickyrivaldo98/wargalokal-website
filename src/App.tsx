@@ -1,6 +1,6 @@
 import "./styles/globals.css";
 import "./styles/style.css";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/HomePage";
 import FindDesa from "./pages/findDesa";
 import Login from "./auth/login";
@@ -13,7 +13,7 @@ import { FormVolunteer } from "./pages/FormVolunteer";
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Switch>
         <Route path="/admin">
           <Admin />
@@ -40,7 +40,7 @@ const App = () => {
           <Home />
         </Route>
       </Switch>
-    </>
+    </BrowserRouter>
   );
 };
 

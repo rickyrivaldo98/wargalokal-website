@@ -1,13 +1,12 @@
-import Footer from "src/Layout/footer";
-import Navbar from "src/Layout/navbar";
+import Navbar from "../layout/Navbar";
+import Footer from "../layout/footer";
 import { useState } from "react";
-
-import Header from "src/components/profildesa/header";
-import Ikl from "src/components/profildesa/Ikl";
-import Iks from "src/components/profildesa/Iks";
-import Ike from "src/components/profildesa/Ike";
-import PeluangPembangunan from "src/components/profildesa/PeluangPembangunan";
-import Profiledesa from "src/components/profildesa/profildesa";
+import Header from "../components/profildesa/header";
+import Ike from "../components/profildesa/Ike";
+import Ikl from "../components/profildesa/Ikl";
+import Iks from "../components/profildesa/Iks";
+import PeluangPembangunan from "../components/profildesa/PeluangPembangunan";
+import Profiledesa from "../components/profildesa/profildesa";
 
 const ProfileDesa = () => {
   const [activeTab, setActiveTab] = useState("tab1");

@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { createVolunteer } from "src/api/volunteer/Volunteer";
+import { createVolunteer } from "../api/volunteer/Volunteer";
 
 export const FormVolunteer = () => {
   const [agree, setAgree] = useState(false);

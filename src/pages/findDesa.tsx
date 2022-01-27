@@ -1,5 +1,5 @@
-import Footer from "../Layout/footer";
-import Navbar from "../Layout/navbar";
+import Footer from "../layout/footer";
+import Navbar from "../layout/Navbar";
 import FilterSektor from "../components/desa/filterSektor";
 import Sektor from "../components/desa/sektorDesa";
 import { Link } from "react-router-dom";

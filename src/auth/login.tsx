@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Navbar from "src/Layout/navbar";
+import Navbar from "../layout/Navbar";
 import petani from "../assets/icons/petani.png";
 const Login = () => {
 
