@@ -1,0 +1,68 @@
+.section-desatrending{
+    @apply container bg-color-gray mx-auto mt-20
+}
+
+.text-heading{
+    @apply ml-10 my-5
+}
+
+.text-trending{
+    @apply text-xl font-semibold tracking-wide
+}
+
+.container-volunteer{
+    @apply flex-none md:flex  justify-center items-center  w-full  rounded-lg  mx-auto
+}
+
+.container-card{
+    @apply  px-16 transition-shadow shadow-xl  bg-white hover:shadow-xl min-w-max my-5 relative rounded mx-2
+}
+
+.status-volunteer{
+    @apply absolute right-0 p-3
+}
+
+.text-status-volunteer{
+    @apply bg-primary text-white p-2 text-sm rounded-full
+}
+
+.card-media{
+    @apply w-full pt-32
+}
+
+.container-content-card{
+    @apply flex items-center p-4
+}
+
+.content-card{
+    @apply relative flex flex-col items-center w-full
+}
+
+.avatar{
+    @apply h-24 w-24 rounded-full relative flex items-end justify-end min-w-max -top-16 bg-purple-200 row-start-1 row-end-3
+    ring-1 ring-white
+}
+
+.content-card-text{
+    @apply flex flex-col space-y-1 justify-center items-center -mt-12 w-full
+}
+
+.nama-desa{
+    @apply text-base font-semibold
+}
+
+.nama-kegiatan{
+    @apply text-base whitespace-nowrap text-gray-600
+}
+
+.jenis-volunteer{
+    @apply text-sm text-gray-500
+}
+
+.btn-container{
+    @apply py-2 flex space-x-2
+}
+
+.btn-content{
+    @apply flex justify-center  whitespace-nowrap focus:outline-none  focus:ring  focus:border-blue-300 rounded  text-gray-100 bg-primary hover:bg-green-600 px-4 py-1 items-center hover:shadow-lg
+}
