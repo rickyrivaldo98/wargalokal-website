@@ -1,6 +1,6 @@
 import axios from "axios";
-import { apiUrl } from "src/shared/env";
-import { axiosConfig } from "src/utils/network";
+import { apiUrl } from "../../shared/env";
+import { axiosConfig } from "../../utils/network";
 import { Volunteer } from "./models/Volunteer";
 
 export const createVolunteer = async (volunteer: Volunteer) => {

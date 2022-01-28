@@ -1,11 +1,11 @@
-import Sidebar from "src/components/admin/sidebar";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Switch, Route } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import VolunteerAdmin from "./VoluteerAdmin";
-import NavbarAdmin from "src/components/admin/navbarAdmin";
 import Detailvolunteer from "./Detailvolunteer";
 import Profile from "./Profile";
+import Sidebar from "../../components/admin/sidebar";
+import NavbarAdmin from "../../components/admin/navbarAdmin";
 
 const Admin = () => {
   return (

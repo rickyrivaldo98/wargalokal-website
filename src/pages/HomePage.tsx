@@ -1,5 +1,5 @@
-import Navbar from "../Layout/navbar";
-import Footer from "../Layout/footer";
+import Navbar from "../layout/Navbar";
+import Footer from "../layout/footer";
 import headerBg from "../assets/bg.png";
 import tentang from "../assets/tentang.png";
 import tujuanBG from "../assets/tujuan.png";

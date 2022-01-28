@@ -1,13 +1,13 @@
-import TabDeskripsi from "src/components/volunteer/tabDeskripsi";
-import TabPerkembangan from "src/components/volunteer/tabPerkembangan";
-import Footer from "src/Layout/footer";
-import Navbar from "src/Layout/navbar";
+import TabDeskripsi from "../components/volunteer/tabDeskripsi";
+import TabPerkembangan from "../components/volunteer/tabPerkembangan";
+import Footer from "../layout/footer";
 import headerBg from "../assets/bg.png";
 import { useState } from "react";
-import TabFAQ from "src/components/volunteer/tabFAQ";
-import TabKomentar from "src/components/volunteer/tabKomentar";
-import Profiledesa from "src/components/profildesa/profildesa";
+import TabFAQ from "../components/volunteer/tabFAQ";
+import TabKomentar from "../components/volunteer/tabKomentar";
+import Profiledesa from "../components/profildesa/profildesa";
 import { Link } from "react-router-dom";
+import Navbar from "../layout/Navbar";
 
 const VolunteerDesa = () => {
   const [activeTab, setActiveTab] = useState("tab1");

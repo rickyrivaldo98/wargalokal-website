@@ -1,6 +1,6 @@
 import axios from "axios";
-import { apiUrl } from "src/shared/env";
-import { combineURLPaths } from "src/utils/urlHelper";
+import { apiUrl } from "../../shared/env";
+import { combineURLPaths } from "../../utils/urlHelper";
 import { User } from "./models/User";
 
 export const getAllUser = async () => {

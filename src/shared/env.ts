@@ -1,4 +1,5 @@
-export const isDevMode = process.env.NODE_ENV === "development";
-export const isTestMode = process.env.NODE_ENV === "test";
+const env = import.meta.env
 
-export const apiUrl = process.env.API_URL || "http://localhost:3001";
+export const isDevMode = env.NODE_ENV === "development";
+export const isTestMode = env.NODE_ENV === "test";
+export const apiUrl = env.API_URL;
