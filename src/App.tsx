@@ -13,34 +13,32 @@ import { FormVolunteer } from "./pages/FormVolunteer";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/admin">
-          <Admin />
-        </Route>
-        <Route exact path="/volunteerdesa">
-          <VolunteerDesa />
-        </Route>
-        <Route exact path="/formvolunteer">
-          <FormVolunteer />
-        </Route>
-        <Route exact path="/caridesa">
-          <FindDesa />
-        </Route>
-        <Route exact path="/profiledesa">
-          <ProfileDesa />
-        </Route>
-        <Route exact path="/auth/login">
-          <Login />
-        </Route>
-        <Route exact path="/auth/register">
-          <Register />
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </BrowserRouter>
+    <Switch>
+      <Route path="/admin">
+        <Admin />
+      </Route>
+      <Route exact path="/volunteerdesa">
+        <VolunteerDesa />
+      </Route>
+      <Route exact path="/formvolunteer">
+        <FormVolunteer />
+      </Route>
+      <Route exact path="/caridesa">
+        <FindDesa />
+      </Route>
+      <Route exact path="/profiledesa">
+        <ProfileDesa />
+      </Route>
+      <Route exact path="/auth/login">
+        <Login />
+      </Route>
+      <Route exact path="/auth/register">
+        <Register />
+      </Route>
+      <Route exact path="/">
+        <Home />
+      </Route>
+    </Switch>
   );
 };
 
