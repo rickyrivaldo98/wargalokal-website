@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../layout/Navbar";
 import petani from "../assets/icons/petani.png";
+import { Link } from "react-router-dom";
 const Login = () => {
 
   const [email, setEmail] = useState("");
@@ -8,10 +9,10 @@ const Login = () => {
 
   return (
     <>
-    <div className="z-1">
-    <Navbar/>
+      <div className="z-1">
+        <Navbar />
 
-    </div>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="left-section bg-color-gray relative md:h-screen">
           <img className="bottom-0 m-auto absolute z-0" src={petani} alt="" />
@@ -64,12 +65,14 @@ const Login = () => {
               />
             </div>
             <div className="flex w-full mt-8">
-              <button
-                className="bg-green-dark text-white text-lg py-2 px-4 font-medium rounded-2xl focus:outline-none focus:shadow-outline h-11 hover:bg-opacity-70 w-1/3"
-                type="submit"
-              >
-                Login
-              </button>
+              <Link to="/admin">
+                <button
+                  className="bg-green-dark text-white text-lg py-2 px-4 font-medium rounded-2xl focus:outline-none focus:shadow-outline h-11 hover:bg-opacity-70 w-1/3"
+                  type="submit"
+                >
+                  Login
+                </button>
+              </Link>
             </div>
           </form>
         </div>

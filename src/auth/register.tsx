@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Navbar from "../layout/Navbar";
 import petani from "../assets/icons/petani.png";
-const Register = () => {
 
+const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -10,7 +10,7 @@ const Register = () => {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    const data = { email, password, confirmPassword };
+    const data = { email, password };
     console.log(data);
     validatePassword();
   }
