@@ -24,10 +24,13 @@ async function startServer() {
     const renderPage = createPageRenderer({ viteDevServer, isProduction, root })
     app.get('*', async (req, res, next) => {
         const url = req.originalUrl
-        const pageContextInit = { url }
+        const pageContextInit = {
+            url,
+        }
         const pageContext = await renderPage(pageContextInit)
-        if (!pageContext.httpResponse) return next()
-        const { body, statusCode, contentType } = pageContext.httpResponse
+        const { httpResponse } = pageContext
+        if (!httpResponse) return next()
+        const { body, statusCode, contentType } = httpResponse
         res.status(statusCode).type(contentType).send(body)
     })
 

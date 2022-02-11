@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import Navbar from "../layout/Navbar";
 import petani from "../assets/icons/petani.png";
@@ -27,7 +28,7 @@ const Register = () => {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="left-section bg-color-gray relative md:h-screen">
           <img className="bottom-0 m-auto absolute " src={petani} alt="" />
