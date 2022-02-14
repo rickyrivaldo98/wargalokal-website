@@ -3,7 +3,7 @@ export { PageLayout }
 import '../src/styles/globals.css'
 import '../src/styles/style.css'
 
-function PageLayout({ children }: { children: React.ReactNode; }) {
+function PageLayout({ children }: { children: React.ReactNode }) {
     return (
         <React.StrictMode>
             {children}
