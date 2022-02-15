@@ -1,3 +1,8 @@
+# Catatan membuat branch baru
+
+[nama kalian]/[kode issue di jira]
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
