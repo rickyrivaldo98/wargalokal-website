@@ -5,7 +5,7 @@ module.exports = {
     backgroundColor: (theme) => ({
       ...theme("colors"),
       "color-gray": "#FAFDFB",
-      primary: "#008000",
+      primary: "#1E9F78",
     }),
     extend: {
       colors: {
@@ -14,6 +14,12 @@ module.exports = {
           dark: "#008000",
           nav: "#329532",
           navdark: "#216121",
+          primary: "#1E9F78",
+          lightPrimary: "#34BA92",
+        },
+        yellow: {
+          primary: "#FEC85B",
+          light: "#FFF1D5",
         },
       },
     },

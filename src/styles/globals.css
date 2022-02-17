@@ -7,6 +7,10 @@
 * {
   font-family: "Nunito", sans-serif;
 }
+
+/* body {
+  overflow-x: hidden;
+} */
 .jumbotron {
   width: 100%;
   height: 80vh;

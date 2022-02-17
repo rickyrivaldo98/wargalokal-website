@@ -1,5 +1,5 @@
-import Navbar from "../layout/Navbar";
-import Footer from "../layout/footer";
+import Navbar from "../layout/newNavbar";
+import Footer from "../layout/newFooter";
 import headerBg from "../assets/bg.png";
 import tentang from "../assets/tentang.png";
 import tujuanBG from "../assets/tujuan.png";
@@ -7,8 +7,13 @@ import check from "../assets/icons/check.png";
 import rocket from "../assets/icons/rocket.png";
 import chat from "../assets/icons/chat.png";
 import partner from "../assets/partner.png";
+import { useEffect } from "react";
 
+// componentDidMount back to top of the page
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <Navbar />
