@@ -1,8 +1,8 @@
 const Deskripsi = () => {
   return (
     <>
-      <div className="shadow-lg bg-white w-3/4 mx-auto mt-8 rounded-3xl">
-        <p className="text-center p-12 font-bold text-2xl font-sans">Deskripsi</p>
+      <div className="shadow-lg bg-white w-3/4 mx-auto mt-8 rounded-3xl text-gray-600">
+        <p className="text-center p-12 font-bold text-2xl font-sans ">Deskripsi</p>
         <p className="px-12 pb-8">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi veritatis ut eius quod, omnis illo at.
           Necessitatibus veniam laboriosam unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint enim

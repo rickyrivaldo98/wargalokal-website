@@ -6,6 +6,7 @@ import FindDesa from "./pages/findDesa";
 import Login from "./auth/login";
 import Register from "./auth/register";
 import VolunteerDesa from "./pages/VolunteerDesa";
+import VolunteerDesa_lama from "./pages/VolunteerDesa_lama";
 
 import ProfileDesa from "./pages/ProfileDesa";
 import Admin from "./pages/admin/Admin";
@@ -19,6 +20,10 @@ const App = () => {
       </Route>
       <Route exact path="/volunteerdesa">
         <VolunteerDesa />
+      </Route>
+      {/* Nanti didelete */}
+      <Route exact path="/volunteerdesa2">
+        <VolunteerDesa_lama />
       </Route>
       <Route exact path="/formvolunteer">
         <FormVolunteer />

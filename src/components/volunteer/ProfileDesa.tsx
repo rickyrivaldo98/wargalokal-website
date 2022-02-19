@@ -1,7 +1,7 @@
 const ProfileDesa = () => {
   return (
     <>
-      <div className="container flex-col">
+      <div className="flex-col">
         <div className="flex-1 flex mx-auto w-auto">
           <div className="flex-initial w-auto mx-auto flex-cols">
             <div className="flex-initial text-green-lightPrimary text-3xl font-bold mb-6">Profile Desa Menawan</div>

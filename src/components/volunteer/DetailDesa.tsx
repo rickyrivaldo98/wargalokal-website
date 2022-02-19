@@ -24,7 +24,7 @@ const DetailDesa = () => {
   };
   return (
     <>
-      <div className="container mt-16 pb-16 bg-gray-100">
+      <div className=" mt-16 pb-16 bg-gray-100">
         <p className="text-center p-12 font-bold text-2xl text-green-primary">
           Pemanfaatan Teknologi di Sekolah Desa Menawan
         </p>
