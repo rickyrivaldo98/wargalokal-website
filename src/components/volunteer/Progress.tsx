@@ -36,7 +36,7 @@ const Progress = () => {
           <div className=" flex justify-between mt-4">
             <div className="flex justify-center items-center">
               {/* Comment Icon */}
-              <button className="hover:text-blue-600 flex mr-7">
+              <button className="hover:text-blue-600 flex md:mr-7 mr-3">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor">
                   <path
                     fill-rule="evenodd"
@@ -58,8 +58,8 @@ const Progress = () => {
                 <div className=" ml-1">21</div>
               </button>
             </div>
-            <div className="flex-1  flex justify-end">
-              <button className="p-2 bg-white rounded-sm border-gray-300 border-2 text-gray-400 hover:text-gray-600 shadow-sm">
+            <div className="flex-1 flex justify-end">
+              <button className="md:p-2 p-1 bg-white rounded-sm border-gray-300 md:text-base text-xs border-2 text-gray-400 hover:text-gray-600 shadow-sm">
                 Baca selengkapnya
               </button>
             </div>

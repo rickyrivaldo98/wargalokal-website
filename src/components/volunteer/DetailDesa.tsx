@@ -24,14 +24,14 @@ const DetailDesa = () => {
   };
   return (
     <>
-      <div className=" mt-16 pb-16 bg-gray-100">
+      <div className="mt-16 pb-16 bg-gray-100 text-sm">
         <p className="text-center p-12 font-bold text-2xl text-green-primary">
           Pemanfaatan Teknologi di Sekolah Desa Menawan
         </p>
-        <div className="shadow-lg flex bg-white w-3/4 mx-auto text-center rounded-full text-gray-500">
+        <div className="shadow-lg flex bg-white w-3/4 mx-auto text-xs text-center rounded-full text-gray-500">
           <button
             className={
-              "flex-1 p-4 rounded-full" + (activeTab === "tab1" ? " bg-green-primary font-bold text-white" : "")
+              "flex-1 p-2 rounded-full" + (activeTab === "tab1" ? " bg-green-primary font-bold text-white" : "")
             }
             onClick={handleTab1}
           >
@@ -39,7 +39,7 @@ const DetailDesa = () => {
           </button>
           <button
             className={
-              "flex-1 p-4 rounded-full " + (activeTab === "tab2" ? "bg-green-primary font-bold text-white" : "")
+              "flex-1 p-2 rounded-full " + (activeTab === "tab2" ? "bg-green-primary font-bold text-white" : "")
             }
             onClick={handleTab2}
           >
@@ -47,7 +47,7 @@ const DetailDesa = () => {
           </button>
           <button
             className={
-              "flex-1 p-4 rounded-full " + (activeTab === "tab3" ? "bg-green-primary font-bold text-white" : "")
+              "flex-1 p-2 rounded-full " + (activeTab === "tab3" ? "bg-green-primary font-bold text-white" : "")
             }
             onClick={handleTab3}
           >
@@ -55,7 +55,7 @@ const DetailDesa = () => {
           </button>
           <button
             className={
-              "flex-1 p-4 rounded-full " + (activeTab === "tab4" ? "bg-green-primary font-bold text-white" : "")
+              "flex-1 p-2 rounded-full " + (activeTab === "tab4" ? "bg-green-primary font-bold text-white" : "")
             }
             onClick={handleTab4}
           >

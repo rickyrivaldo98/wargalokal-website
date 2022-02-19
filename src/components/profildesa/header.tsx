@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex min-h-full">
           <div className="m-auto text-white text-center">
             <div className="text-5xl font-sans font-bold tracking-wide">Desa Menawan</div>
-            <div className="mt-3  font-sans text-yellow-primary">Kabupaten Kudus, Jawa Tengah</div>
+            <div className="mt-3 font-sans text-yellow-primary">Kabupaten Kudus, Jawa Tengah</div>
           </div>
         </div>
       </div>

@@ -21,17 +21,22 @@ const Komentar = () => {
             <div className="komentar ">
               <div className="flex ">
                 <div className="profile_picture">
-                  <img src={pp} alt="..." className="rounded-full w-20" />
+                  <img src={pp} alt="..." className="rounded-full w-16 lg:w-20 sm:w-36" />
                 </div>
                 <div className="flex-cols mx-4">
                   <p className="text-green-primary font-bold text-xl">Carl Johnson</p>
-                  <p className="text-xs">11.16 · 19 Februari 2022</p>
-                  <p className="">
+                  <p className="text-xs hidden sm:block">11.16 · 19 Februari 2022</p>
+                  <p className="text-sm md:text-base hidden sm:flex">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, assumenda voluptatibus. Maxime
                     provident delectus reiciendis? Voluptas inventore enim itaque tenetur!
                   </p>
                 </div>
               </div>
+              <p className="text-xs sm:hidden py-3">11.16 · 19 Februari 2022</p>
+              <p className="text-sm md:text-base flex sm:hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, assumenda voluptatibus. Maxime
+                provident delectus reiciendis? Voluptas inventore enim itaque tenetur!
+              </p>
               <div className="flex mt-3">
                 <button className="likes mr-4 hover:text-red-700 flex">
                   <svg
@@ -69,20 +74,25 @@ const Komentar = () => {
               </div>
             </div>
             <div className="border-t-2 my-5"></div>
-            <div className="reply relative left-8 ">
+            <div className="reply relative left-5 ">
               <div className="flex ">
                 <div className="profile_picture">
-                  <img src={pp} alt="..." className="rounded-full w-20" />
+                  <img src={pp} alt="..." className="rounded-full w-16 lg:w-20 sm:w-36" />
                 </div>
                 <div className="flex-cols mx-4">
                   <p className="text-green-primary font-bold text-xl">Carl Johnson</p>
-                  <p className="text-xs">11.16 · 19 Februari 2022</p>
-                  <p className="">
+                  <p className="text-xs hidden sm:block">11.16 · 19 Februari 2022</p>
+                  <p className="text-sm md:text-base hidden sm:flex">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, assumenda voluptatibus. Maxime
                     provident delectus reiciendis? Voluptas inventore enim itaque tenetur!
                   </p>
                 </div>
               </div>
+              <p className="text-xs sm:hidden py-3">11.16 · 19 Februari 2022</p>
+              <p className="text-sm md:text-base flex sm:hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, assumenda voluptatibus. Maxime
+                provident delectus reiciendis? Voluptas inventore enim itaque tenetur!
+              </p>
             </div>
           </div>
         </div>
